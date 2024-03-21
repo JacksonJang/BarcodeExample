@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: BarcodeViewDelegate {
-    func complete(status: ReaderStatus) {
+    func complete(status: BarcodeViewStatus) {
         switch status {
         case .success(let code):
             let alert = UIAlertController(title: "알림", message: code, preferredStyle: .alert)

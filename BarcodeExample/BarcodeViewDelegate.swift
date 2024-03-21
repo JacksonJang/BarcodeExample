@@ -1,3 +1,3 @@
 protocol BarcodeViewDelegate: AnyObject {
-    func complete(status: ReaderStatus)
+    func complete(status: BarcodeViewStatus)
 }
